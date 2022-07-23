@@ -1,0 +1,38 @@
+<h1 class="w-[80%] mx-auto text-4xl capitalize font-light mt-[1.5%] mb-[1%]">
+    calculadora {{n1}} , {{n2}}
+</h1>
+<div class="w-[80%] mx-auto h-[85%] bg-slate-100 flex items-center p-10 min-w-[1700px]">
+    
+    <div id="calculadora" class="w-[40%] h-[80%] bg-slate-600 shadow-black shadow-lg ">
+        <div class="bg-slate-50 w-[80%] h-[15%] mx-auto mt-4 rounded-2xl">
+            <input type="number" class=" h-full w-full text-[200%] px-16 rounded-2xl" readonly id="screen">
+        </div>
+        <div class=" w-[80%] h-[70%] mx-auto mt-4">
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(1)">1</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(2)">2</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(3)">3</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(4)">4</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(5)">5</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(6)">6</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(7)">7</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(8)">8</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(9)">9</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="set_to_screen(0)">0</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="Set_Opeartion('+')">+</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="Set_Opeartion('-')">-</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="Set_Opeartion('/')">/</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-slate-500 ml-5 mt-5 hover:bg-slate-400 duration-200 text-white text-2xl" (click)="Set_Opeartion('x')">x</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-red-400 ml-5 mt-5 hover:bg-red-500 duration-200 text-white text-2xl" (click)="set_to_screen(-1)">DEL</button>
+            <button class="w-[20%] 2xl:h-[20%] sm:h-[10%] bg-orange-400 ml-5 mt-5 hover:bg-orange-500 duration-200 text-white text-2xl" (click)="Set_Opeartion('=')">=</button>
+        </div>
+    
+    </div>
+
+    <div class="w-[40%] h-[80%] bg-slate-200 ml-auto">
+        <h2 class="text-2xl text-slate-100 w-full h-[8%] bg-slate-700  px-4 text-center">Registro</h2>
+        <div class="w-full h-fit h-[72%] overflow-auto" id="registros">
+    
+        </div>
+    </div>
+
+</div>

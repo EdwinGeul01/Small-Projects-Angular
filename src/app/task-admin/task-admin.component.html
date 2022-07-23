@@ -1,0 +1,23 @@
+<h1 class="w-[90%] mx-auto mt-4 capitalize text-slate-800">task manager</h1>
+<div class="w-[90%] h-[80%] bg-slate-100 mx-auto mt-[4%] flex">
+
+    <div class="w-[40%] h-full bg-slate-200">
+        <div class="w-full h-full px-10 py-10">
+            <span class="text-slate-500">Task Name:</span><br><br>
+            <input type="text" class="w-full rounded-md h-10 px-4 text-slate-700" id="title"><br><br>
+            <span class="text-slate-500">Description:</span><br><br>
+            <textarea name="" id="" class="w-full h-40 resize-none rounded-md px-4 py-4 text-slate-700" id="description"></textarea>
+            <div class="w-[100%] flex justify-center mt-10">
+                <button class=" border border-slate-600 px-8 py-3 hover:bg-slate-800 hover:text-white duration-200" (click)="Create_task()">Create Task</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="w-[60%] h-full flex flex-wrap flex-row content-start overflow-auto " id="tasks">
+
+
+            
+    </div>
+
+</div>
